@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="images/p1.jpg" />
+  <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <style>
+    #pagecontent
+    {
+        padding: 25px;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(170, 209, 224);
+        color: lightslategray;
+        font-family: Impact, Charcoal, sans-serif;
+    }
+    #nav
+    {
+      background-color: rgb(167, 198, 230);
+      font-family: Impact, Charcoal, sans-serif;
+      color:rgb(255, 255, 255);
+    }
+    #ul {
+    list-style-type: none;
+    overflow: hidden;
+    float: right;
+    font-size: 25px;
+    
+}
+
+
+.floating-text {
+  font-size: 24px;
+  font-weight: bold;
+  animation: floatAnimation 1s infinite alternate;
+}
+
+@keyframes floatAnimation {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(10px);
+  }
+}
+
+
+@keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        .slide-in-text {
+            animation: slideIn 5s ease-in-out;
+        }
+
+
+
+@keyframes slideIn_right{
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-text-right {
+    animation: slideIn_right 5s ease-in-out;
+}
+
+
+#border1 {
+    border-radius: 25px;
+    background:rgb(167, 198, 230);
+    padding: 20px; 
+    width: 20px;
+    height: 15px;    
+}
+
+
+
+
+.floating-container {
+            position: relative;
+            width: 100%;
+            height: 400px; /* Adjust the height as needed */
+            overflow: hidden;
+        }
+
+        /* Style the image */
+        .floating-image {
+            position: absolute;
+            width: 500px; 
+            height: auto;
+            top: 0; /* Initial position at the top */
+            animation: floatAnimation 5s ease-in-out infinite; 
+        }
+
+        /* Define the animation */
+        @keyframes floatAnimation {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(30px); 
+            }
+        }
+</style>
+
+
+
+
+        
+  
+  <title>Home | BNU-China-iGEM 2024</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+    <!--navigation-->
+    <nav id="nav" class="navbar navbar-expand-sm fixed-top">
+      <div class="container-fluid">
+      <div class="navbar-header">
+        <!--team name-->
+          <a class="navbar-brand" href="#">BNU-China</a>
+      </div>
+      <div>
+          <ul class="navbar-nav">
+            <!--project-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+                Project
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#describtion">Describtion</a>
+                <a class="dropdown-item" href="#design">Design</a>
+              </div>
+            </li>
+           <!--team-->
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+              Team
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#member">Members</a>
+              <a class="dropdown-item" href="#attribution">Attribution</a>
+            </div>
+          </li>
+            <!--Lab-->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-bs-toggle="dropdown">
+               Lab
+              </a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#wetlab">Wetlab</a>
+                <a class="dropdown-item" href="#drylab">Drylab</a>
+              </div>
+            </li>
+          </ul>
+      </div>
+      </div>
+  </nav>
+
+
+  <!--page content-->
+  <div id="pagecontent" class="container-fluid" style="background-color: blanchedalmond;">
+    <div class="container" style="color:pink; font-size: larger; font-family: "Comic Sans MS", cursive, sans-serif;">
+      <div class="floating-text">
+       <h1 style="text-align: center;font-size: 100px;margin: 200px;">Welcome to our world!</h1><br>
+       <h2 style="text-align: left;font-size: 80px;margin: 80px;">Let's begin the journey</h2><br>
+       <h2 style="text-align: right;font-size: 80px;margin: 80px;">Follow me</h2>
+       <p class="fade">Here we mainly display our work themes</p>
+       <div class="floating-container">
+        <img class="floating-image" src="images/p1.jpg" alt="Floating Image">
+    </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <div class="container-fluid" style="color: black;font-size: 60px;font-family: "Comic Sans MS", cursive, sans-serif;">
+      <p class="slide-in-text">Here we mainly display our work themes</p><br>
+      <p style="text-align: right;">Through some vivid stories and pictures</p><br>
+      <p class="slide-in-text-right">Let readers understand the problem we want to solve</p><br><br>
+      <p style="font-size: 80px;margin-top: 20px ;">Want to know more? click below</p><br>
+      <div id="linkkk" style="margin-bottom: 50px;">
+      <a id="border1" href="Describtion.html" style="text-decoration: none;color: LightGoldenRodYellow;">Describtion</a>
+      <a id="border1" href="Progress.html" style="text-decoration: none;color: LightGoldenRodYellow;">Progress</a>
+      <a id="border1" href=# style="text-decoration: none;color: LightGoldenRodYellow;">...</a>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <div id="footer" style="background-color:rgb(167, 198, 230);color: rgb(0, 0, 0);text-align: center;height: 500px;margin: 0;font-family: Impact, Charcoal, sans-serif;">
+  <p style="font-size: 50px;">Contact us</p><br>
+  <p style="font-size: 30px;">E-mail</p>
+  <p style="font-size: 30px;">Address</p>
+  </div>
+
+  
+</body>
+</html>
